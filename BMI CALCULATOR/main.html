@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>BODY MASS INDEX</h3>
+        <h2 class="head">BMI CALCULATOR</h2>
+        
+        <div class="flex">
+            <div class="m">
+                <input type="checkbox" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div class="f">
+                <input type="checkbox" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div><br>
+        
+        <div class="background">
+            <label for="" >Age</label><br><br>
+            <input type="number" id="age" required>
+        </div><br>
+
+        <div class="content">
+            <div class="h">
+            <label for="">Height(cm)</label><br><br>
+            <input type="number" id="height"></div>
+            <div class="w"><label for="">Weight(kg)</label><br><br>
+            <input type="number" id="weight"></div>
+        </div><br><br>
+        <div class="button">
+            <button onclick="calculate()">Calculate BMI</button>
+            <button><a href="sci-main.html">Scientific Calculator</a></button>
+        </div>
+        <h3>Your BMI value is</h3>
+        <p id="no">00.000</p>
+        <p id="type">------</p>
+        <img onclick="reset()" src="reset.png" alt="">
+       
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
