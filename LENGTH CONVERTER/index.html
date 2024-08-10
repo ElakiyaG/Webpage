@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">LENGTH CONVERTER</h2>
+        <div class="content">
+        <input type="text" id="no" placeholder="Enter Value"><br>
+        <select id="unitfrom" name="options" aria-placeholder="from">
+            <option value="cm">centimeter</option>
+            <option value="m">meter</option>
+            <option value="kg">kilogram</option>
+            <option value="in">inches</option>
+            <option value="ft">feet</option>
+            <option value="Ib">pound</option>
+        </select>
+        <select id="unitto" name="options" aria-placeholder="from">
+            <option value="cm">centimeter</option>
+            <option value="m">meter</option>
+            <option value="kg">kilogram</option>
+            <option value="in">inches</option>
+            <option value="ft">feet</option>
+            <option value="Ib">pound</option>
+        </select><br>
+        <button class="button" type="submit" onclick="calculate()">SUBMIT</button>
+        <button class="reset" type="reset" onclick="reset()">reset</button>
+    </div>
+        <h2 id="result"></h2>
+    
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
