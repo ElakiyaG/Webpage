@@ -1,0 +1,105 @@
+:root{
+    --darkblue:#3674B5;
+    --lightblue:#578FCA;
+    --blue:#A1E3F9;
+    --green:#D1F8EF;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--darkblue);
+}
+.container{
+    background-color: aliceblue;
+    border: 1px solid;
+    position: absolute;
+    width:50%;
+    transform: translate(-50%,-50%);
+    top:25%;
+    left:50%;
+    padding: 30px;
+    border-radius: 0.6em;
+    box-shadow: 0.2em 0.3em 0.5em var(--lightblue);
+}
+.searchbox{
+    display: grid;
+    grid-template-columns: 9fr 4fr;
+    gap: 20px;
+}
+.type{
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--darkblue);
+    padding-left: 20px;
+    background-color: aliceblue;
+    outline: none;
+}
+.button{
+    background-color: var(--darkblue);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.result{
+    background-color: aliceblue;
+    border: 1px solid;
+    position: absolute;
+    width:fit-content;
+    height: fit-content;
+    margin-bottom:100px;
+    transform: translate(-50%,-50%);
+    top:55%;
+    left:50%;
+    border-radius: 0.6em;
+    box-shadow: 0.2em 0.3em 0.5em var(--lightblue);
+    padding:15px;
+}
+.section{
+    padding-left: 20px;
+    padding-top: 15px;
+    display:grid;
+    grid-template-columns: 2fr 4fr;
+}
+.sound{
+    margin-left:90%;
+    width:40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: aliceblue;
+    border: none;
+}
+.heading{
+    padding-left: 23px;
+    margin-top:0.5%;
+}
+.output{
+    padding:20px;
+    display: grid;
+    gap:20px;
+    font-size: large;
+}
+.details{
+    display:grid;
+    grid-template-columns: .001fr .001fr .001fr .001fr;
+    gap:3px;
+    padding-left: 41px;
+    font-size: large;
+}
+.example{
+    font-style: italic;
+    border-left: 4px solid var(--darkblue);
+    padding-left: 20px;
+}
+.section .details .output{
+    padding-left: 50px;
+}
+@media screen and (min-width:800px) {
+    
+}
