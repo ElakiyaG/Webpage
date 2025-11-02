@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper&Scissor</title>
+</head>
+<body>
+    
+</body>
+<script >
+    function game(){
+    let p=prompt("Please enter rock,paper or scissor.");
+    let o=['rock','paper','scissor'];
+    while(!o.includes(p.toLowerCase())){
+        alert("Enter valid entities....")
+        p=prompt("Please enter rock,paper or scissor.");
+    }
+    let c=o[Math.floor(Math.random()*o.length)];
+    console.log(c);
+    if(p===c){
+        alert("Tie Game");
+    }else{
+        if(p==="rock"){
+            if(c==="scissor"){
+                alert("You win");
+            }
+            else{
+                alert("You lose");
+            }
+        }
+        else if(p==="paper"){
+            if(c==="rock"){
+                alert("You win");
+            }
+            else{
+                alert("You lose");
+            }
+        }
+        else{
+            if(c==="scissor"){
+                alert("You win");
+            }
+            else{
+                alert("You lose");
+            }
+        }
+    }
+    return;
+    }
+    if(confirm("Shall we play Rock,Paper & Scissor.")){
+        game();
+        while(confirm("shall we play another game.")){
+            game();
+        }
+        alert("Ok! Thanks for playing.")
+    }
+</script>
+</html>

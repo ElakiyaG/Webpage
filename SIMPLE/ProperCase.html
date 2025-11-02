@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProperCase</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .center{
+        width: 100vw;
+       height:100vh;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+    }
+    body{
+       background-color: black; 
+       
+    }
+    .container{
+        width:100%;
+        border:1px solid;
+        background-color:aliceblue;
+        padding:20px;
+        width:fit-content;
+        
+    }
+    #result{
+        margin-left:30px;
+        text-align: center;
+    }
+    .sub{
+        border-radius: 10px;
+        padding:5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: aliceblue;
+        background-color: black;
+        margin-left: 35%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    p{
+        margin-top: 5px;;
+    }
+</style>
+<body class="center">
+    <div class="container">
+        <label for="user">Enter Input: </label>
+        <input type="text" id="value" name="user" >
+        <p class="warning">* Input as a combination of both upper and lower case</p> 
+        <button class="sub" onclick=proper()>Proper Case</button>
+        <br><label for="op">Result: </label>
+        <input type="text" id="result" name="op">   
+    </div>
+</body>
+<script>
+    function proper(){
+        const n=document.getElementById("value").value;
+        document.getElementById("result").value=n.charAt(0).toUpperCase() + n.slice(1).toLowerCase();
+    }
+</script>
+</html>
